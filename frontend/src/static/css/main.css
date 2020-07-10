@@ -1,0 +1,853 @@
+/* ======================= version 1 ========================= */
+/* ================= mainlayout ==================== */
+body {
+  margin:0px;
+}
+
+.topnav {
+  overflow: hidden;
+  margin: auto;
+  background-color: #a0cfe7;
+  padding: 10px 15% 10px 15%;
+}
+
+/* Style the header nav */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
+  padding:  10px;
+}
+
+.topnav a .logo {
+  font-size: 12px;
+  display: block;
+}
+
+/* Change the background color on mouse-over */
+/* .topnav a:hover {
+  background-color: white;
+} */
+
+/* Float the link section to the right */
+.nav-right {
+  float: right;
+}
+.topnav button{
+  padding: 10px;
+  margin: 0px 0px 0px 25px;
+  text-align: center;
+  border:0px;
+  color: white;
+  cursor: pointer;
+  background-color: #136e9b;
+  font-size: 12px;
+}
+.topnav button:focus {
+  outline: none;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.main-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #dff1fa;
+}
+
+.highlight{
+  color: #136e9b;
+}
+
+.v1{
+  border-right: 1px solid gray;
+  height: 12px;
+}
+
+/* ================= loginpage ==================== */
+.content-container{
+  display: block;
+  margin: auto;
+  padding: 3% 0 5% 0;
+}
+
+.content-container .row-1 {
+  text-align: center;
+  display: block;
+  padding: 10% 0 10% 0;
+}
+
+.hdr-txt{
+  font-size: 2em;
+  text-align: center;
+  color: #2a6380 ;
+  padding:0;
+}
+
+.sub-txt{
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.content-container .row-2 .row-2-content{
+  padding: 5%;
+  background-color:white;
+}
+
+.content-container .row-2 .row-2-content i{
+  font-size: 1em;
+  position: relative;
+  padding: 3% 10% 3% 10%;
+  border: 1px solid #c4c3c3;
+  margin: 12px;
+  background-color: #c4c3c3;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 5% 0% 5%;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.content-container .row-2 .row-2-content form{
+  display: block;
+  margin: 12px;
+  text-align: left;
+  font-size: 1em;
+  padding: 0% 0% 5% 3%;
+}
+
+.content-container .row-2 .row-2-content form label{
+  display: block;
+  padding: 5% 0% 5% 2%;
+}
+
+.content-container .row-2 .row-2-content form input[type=text],input[type=password]{
+  display: block;
+  width: 90%;
+  padding: 15px ;
+  margin: auto;
+  font-size: 1em;
+  outline: none;
+  border-collapse: collapse;
+  border: 1px solid #c4c3c3;
+  background-color: #c4c3c3;
+}
+
+.row-2-content form input[type=text]:focus,input[type=password] {
+  border: 1px solid #f0ecec;
+}
+
+.content-container .row-2 .row-2-content form .div-opt input[type=checkbox]{
+  float: left;
+  margin: 5.5% 0% 10% 2%;
+}
+
+.content-container .row-2 .row-2-content form .div-opt{
+  position: relative;
+  padding-bottom: 20%;
+}
+
+.content-container .row-2 .row-2-content form .div-opt .remember{
+  float: left;
+}
+
+.content-container .row-2 .row-2-content form .div-opt .forgot{
+  float: right;
+  font-weight: bold;
+}
+
+.btn{
+  width: 100%;
+  padding: 5%;
+  margin: auto;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  border-radius: 3px;
+  border-collapse: collapse;
+  border: 1px solid #2a6380;
+  background-color: #2a6380;
+}
+/* ===============================Searchbar============================= */
+
+.div-search{
+  position: block;
+}
+
+.div-search .searchbar{
+  display: flex;
+  padding: 3.5%;
+}
+
+.div-search .searchbar i{
+  position: absolute; 
+}
+
+.div-search .searchbar .icon{
+  padding: 15px ;
+  font-size: 20px;
+  min-width: 50px;
+}
+
+.div-search .searchbar input{
+  padding: 0 20px 0 20px;
+  width: 80%;
+  font-size: 20px;
+  border: none;
+}
+
+.div-search .searchbar input::placeholder {
+  font-size: 12px;
+}
+
+.div-search .searchbar input[type=text]{
+  display: block;
+  padding: 15px 50px 15px 50px;
+  font-size: 1em;
+  outline: none;
+  border-collapse: collapse;
+  border: 1px solid #f0ecec;
+}
+
+.div-search .searchbar input[type=text]:focus{
+  border: 1px solid #f0ecec;
+}
+
+.div-search .searchbar button{
+  display: block;
+  font-size: 12px;
+  outline: none;
+  color: white;
+  padding: 15px 60px 15px 60px;
+  border-collapse: collapse;
+  border: 1px solid #2a6380;
+  background-color: #2a6380;
+}
+
+/* ===============================Dashboard============================= */
+.dashnav-right {
+  float: right;
+}
+.dashnav-right .dash-nav{
+  position: relative;
+  font-size: 12px;
+}
+.dashnav-right .dash-nav .photo{
+  background-color: #136e9b;
+  width: 10px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.dashnav-right .dash-nav .bell, .photo, .username{
+  float: left;
+  padding: 10px 10px 0 10px;
+}
+
+.dashnav-right .dash-nav .usernav{
+  float: left;
+  padding: 8px 0 0 0;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.dashnav-right .dash-nav .bell{
+  padding: 8px 10px 0 0;
+  font-size: 16px;
+}
+
+.dashboard-container{
+  display: block;
+}
+
+.dashboard-container .main-container{
+  position: relative;
+  height: 100%;
+}
+
+.dashboard-container .main-container .nav-content-container{
+  float: left;
+  width: 73%;
+}
+
+.dashboard-container .main-container .col-1{
+  float: left;
+  background-color: #136e9b;
+  overflow-y: auto;
+  height: 1000px ;
+}
+
+.dashboard-container .main-container .col-1 a{
+  display: block;
+  color:white;
+  padding: 25px 50px 25px 50px ;
+  text-decoration: none;
+}
+
+.dashboard-container .main-container .col-1 a:hover:not(.active) {
+  background-color:#407b92;
+}
+
+.dashboard-container .main-container .col-1 a.active{
+  background-color:#1c4657;
+}
+
+.dashboard-container .main-container .col-2{
+  position: relative;
+}
+
+.dashboard-container .main-container .col-2 .col-2-tab{
+  position: block;
+}
+
+.dashboard-container .main-container .col-2 .col-2-tab a{
+  color: #2a6380;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 3.5%;
+}
+
+.dashboard-container .main-container .col-2 .col-2-tab hr, .active{
+  display: relative;
+}
+
+.dashboard-container .main-container .col-2 .col-2-tab hr{
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+/* ========================dashboard tab container================ */
+
+.tab-container{
+  position: relative;
+  padding: 0% 3.5% 5% 3.5%;
+}
+
+.tab-container .filter{
+  padding: 2% 0%;
+}
+
+.tab-container .filter select{
+  padding: 10px 100px 10px 10px ;
+  border-radius: 5px;
+  border: 1px solid #2a6380;
+  background-color:white;
+  outline: none;
+  margin: auto;
+}
+
+.tab-container .filter .btn-create{
+  float: right;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid #2a6380 ;
+  background-color: #2a6380 ;
+}
+
+.tab-container .filter .div-right-actions{
+  float: right;
+}
+
+.tab-container .filter .div-right-actions i{
+  padding: 5px 8px;
+  font-size: 24px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color:  #2a6380;
+  border: 1px solid #2a6380 ;
+}
+
+.tab-container .filter .select-items div, .select-selected {
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  outline: none;
+  position: absolute;
+  background-color:white;
+}
+
+.tab-container .filter .select-items div:hover {
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  outline: none;
+  position: absolute;
+  background-color:white;
+}
+
+.tab-content-container{
+  margin-top: 1%;
+  padding: 3%;
+  background-color:white;
+}
+
+.tab-content-container .div-hdr{
+  position: relative;
+  padding: 2% 2% 3% 2%;
+  border: 1px solid #cccbcb;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab-content-container .div-hdr .hdr{
+  display: inline-block;
+  width: 100%;
+}
+
+.tab-content-container .div-hdr .hdr .company{
+  float: left;
+  display: flex;
+  width: 40%;
+}
+
+.tab-content-container .div-hdr .hdr .company i {
+  font-size: 3.5em;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #cccbcb;
+}
+
+.tab-content-container .div-hdr .hdr .company span {
+  font-size: 1.1em;
+  margin-top: 3%;
+}
+
+.tab-content-container .div-hdr .hdr .company-dtl{
+  float: right;
+  position: relative;
+  width: 60%;
+}
+
+.tab-content-container .div-hdr .statistics{
+  float: left;
+  margin-top: 2%;
+}
+.tab-content-container .div-hdr .skills{
+  float: right;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.tab-content-container .job-desc {
+  padding: 2% 5% 3% 3%;
+  display: block;
+  border: 1px solid #cccbcb;
+}
+
+.tab-content-container h3, label {
+  color: #2a6380;
+}
+
+.skills{
+  color: white;
+  display: inline-block;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #2a6380;
+}
+
+.tab-content{
+  position: relative;
+  margin: 5% 0%;
+}
+
+.tab-content .col-1-inbox{
+  float: left;
+  width: 45%;
+  font-size: 1.3em;
+}
+
+.tab-content .col-1-inbox .hdr i{
+  float: right;
+  color: white;
+  padding: 5px;
+  border: 1px solid #2a6380;
+  background-color: #2a6380;
+  border-radius: 3px;
+}
+
+.tab-content .col-1-inbox .hdr label{
+  color: #2a6380;
+}
+
+.tab-content .col-1-inbox .list-of-messages{
+  position: relative;
+  font-size: 16px;
+  margin-top: 10%;
+  padding: 5%;
+  border-radius: 5px;
+  border: 1px solid #cccbcb;
+  background-color: white;
+}
+
+.tab-content .col-1-inbox .list-of-messages .user-info{
+  float: left;
+}
+
+.tab-content .col-1-inbox .list-of-messages .user-info  span{
+  padding: 10px;
+  display: inline-block;
+}
+
+.tab-content .col-1-inbox .list-of-messages .desc i{
+  font-size: 3em;
+  color: #2a6380;
+}
+
+.tab-content .col-1-inbox .list-of-messages .status{
+  float: right;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #979393;
+}
+
+.tab-content .col-1-inbox .list-of-messages .preview, label{
+  color: #979393;
+}
+
+.tab-content .col-2-inbox{
+  float: right;
+  width: 50%;
+}
+
+.tab-content .col-2-inbox .desc {
+  position: relative;
+  padding: 8%;
+  border-bottom: 1px solid #cccbcb;
+  background-color: white;
+}
+
+.tab-content .col-2-inbox .desc span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.tab-content .col-2-inbox .desc i{
+  font-size: 3em;
+  color: #2a6380;
+}
+
+.tab-content .col-2-inbox .msg-date {
+  position: relative;
+  padding-top: 8%;
+  font-weight: bold;
+  background-color: white;
+}
+
+.tab-content .col-2-inbox .div-msg {
+  position: relative;
+  padding: 8%;
+  padding-bottom: 0%;
+  background-color: white;
+}
+
+.tab-content .col-2-inbox .div-msg span {
+  display: inline-block;
+  background-color: #cccbcb;
+  margin-left: 10px;
+  padding: 0 10% 15% 10%;
+  border-radius: 5px;
+  color: #cccbcb;
+}
+
+.tab-content .col-2-inbox .div-msg i{
+  font-size: 3em;
+  color: #2a6380;
+}
+
+/* .div-post-a-job .inside-div{
+  font-size: 12px;
+  text-align: center;
+  padding: 12% 5% 10% 5%;
+  border: 2px dashed #c4c0c0;
+}
+
+.div-post-a-job .inside-div .btn{
+  width: 18% ;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1.5% 5% 1.5% 5%;
+} */
+
+/* .div-post-a-job .div-border{
+  font-size: 12px;
+  padding: 12% 5% 10% 5%;
+  border-radius: 2px;
+  border: 1px solid #cccbcb;
+} */
+
+.div-post-a-job .div-btn {
+  border: 1px solid #cccbcb;
+  border-top: none;
+  display: flex;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.div-post-a-job .btn-edit, .btn-default{
+  margin: 20px;
+  margin-right: 5px;
+  padding: 15px 30px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+}
+
+.div-post-a-job .btn-edit{
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #2a6380 ;
+  background-color: #2a6380 ;
+}
+
+.div-post-a-job .btn-default{
+  color: #2a6380;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #2a6380 ;
+  border-radius: 5px;
+}
+
+.div-post-a-job .btn-default:hover{
+  background-color:none;
+}
+
+.div-box{
+  display: block;
+  width: 250px;
+  height: 240px;
+  margin:auto;
+  padding: 10%;
+}
+
+.form{
+  padding:10%;
+}
+.form-group .form-control{
+  background-color:  gainsboro ;
+}
+.form-group .btn{
+  width:80%;
+}
+
+.form-div{
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+  height: 450px;
+  background-color: black;
+  padding-left: 3%;
+  padding-bottom: 10%;
+  
+}
+.form-div .form-group{
+  float:right;
+  width: 45%; 
+  height: 450px; 
+  padding-top: 5%; 
+  padding-left: 3%;
+  background-color:white;
+}
+
+.form-div .ad-div{
+  float:left ;
+  padding-top: 5%; 
+  width: 45%; 
+  height: 450px; 
+}
+
+.row {
+  padding: 5%;
+  width: 100%;
+  margin-left: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.row button{
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #2a6380 ;
+  background-color: #2a6380 ;
+  outline: none;
+}
+
+.row a{
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #2a6380 ;
+  background-color: #2a6380 ;
+  
+}
+
+
+.col1, .col2 {
+  display: inline-block;
+  margin: 3%;
+  padding: 1em;
+  text-align: left;
+  border: 2px solid #add8e6;
+}
+
+.footer {
+  margin: auto;
+  padding: 0 10% 0 10%;
+  display: flex;
+  background-color: #2a6380;
+  font-size: 1em;
+  color: white;
+}
+
+.footer .left{
+  margin: auto;
+  float:left;
+  padding-top: 3%;
+  margin: auto;
+  height: 350px;
+}
+
+.footer .left5{
+  margin: auto;
+  float:left;
+  padding-top: 3%;
+  margin: auto;
+  height: 350px;
+}
+
+.content{
+  height: 50%;
+  display: block;
+  bottom: 10%;
+}
+
+.icon i{
+  padding: 3% 10% 3% 10%;
+  margin:auto;
+  margin-left: 2%;
+  background-color:  gainsboro ;
+  border: 1px solid gainsboro;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 800px) {
+  .topnav {
+    position: relative;
+  }
+  /* .nav-right{
+    float: none;
+    display: none;
+    text-align: left;
+  } */
+  /* .topnav .icon{
+    float: right;
+    padding: 5px;
+    font-size: 12px;
+    display: block;
+  } */
+  /* .nav-right{
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+  .content-container .row-1 {
+    text-align: center;
+    padding: 8% 0 10% 0;
+  }
+  .hdr-txt{
+    font-size: 1.5em;
+    text-align: center;
+    color: #2a6380 ;
+    padding:0;
+  }
+  .sub-txt{
+    font-size: 1em;
+    text-align: center;
+  }
+  .content-container .row-2 .row-2-content i{
+    display: inline-block;
+    background-color:white;
+    padding: 3% 10% 3% 10%;
+    font-size: 1.5em;
+    border: 1px solid c4c3c3;
+    margin: 5px;
+    background-color: #c4c3c3;
+  }
+  .div-post-a-job .div-hdr .hdr {
+    display: inline-block;
+    width: auto;
+    padding-bottom: 3%;
+  }
+  .div-post-a-job .div-hdr .hdr .company{
+    float: none;
+    width: auto;
+  }
+  .div-post-a-job .div-hdr .hdr .company-dtl{
+    float: none;
+    width: auto;
+  }
+  .div-post-a-job .div-hdr .hdr .company-dtl .statistics{
+    float: none;
+    padding-bottom: 5%;
+  }
+  .div-post-a-job .div-hdr .hdr .company-dtl .skills{
+    padding: 5px 25% 5px 25%;
+    float: none;
+  }
+  .tab-container .filter select{
+    width: 100%;
+  }
+  .tab-container .filter  .div-right-actions i{
+    float: none;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .tab-container .filter .btn-create{
+    float: none;
+    margin-top: 10px;
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+/* ===================================end of version 1 ===================================== */
